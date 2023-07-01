@@ -9,7 +9,8 @@ import SwiftUI
 
 struct SelectCurrency: View {
     
-    let gridLayout = [GridItem(), GridItem(), GridItem()]
+    @Binding var leftCurreny: Currency
+    @Binding var rightCurreny: Currency
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -27,10 +28,7 @@ struct SelectCurrency: View {
                     .fontWeight(.bold)
                 
                 // Currency icons
-                //CurrencyIcon(currencyImage: "copperpenny", currencyText: "Copper Penny")
-                LazyVGrid(columns: gridLayout) {
-                    
-                }
+                IconGrid(currency: $leftCurreny)
                 
                 // Text
                 Text("Select the curreny you would like to convert to:")
@@ -38,6 +36,7 @@ struct SelectCurrency: View {
                     .fontWeight(.bold)
                 
                 // Currency icons
+                IconGrid(currency: $rightCurreny)
                 
                 // Done button
                 Button {
@@ -57,6 +56,7 @@ struct SelectCurrency: View {
 
 struct SelectCurrency_Previews: PreviewProvider {
     static var previews: some View {
-        SelectCurrency()
+        SelectCurrency(leftCurreny: .constant(.silverPiece),
+                       rightCurreny: .constant(.goldPiece))
     }
 }
