@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ExchangeInfo: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ZStack {
             // Background Image
@@ -37,13 +40,26 @@ struct ExchangeInfo: View {
                 ExchangeRate(leftImage: "silverpenny", text: "1 Silver Penny = 100 Copper Pennies", rightImage: "copperpenny")
                 
                 // Done button
+                Button {
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Text("Done")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(.brown)
+                        .cornerRadius(15)
+                }
+
             }
         }
+        .foregroundColor(.black)
     }
 }
 
 struct ExchangeInfo_Previews: PreviewProvider {
     static var previews: some View {
         ExchangeInfo()
+            .preferredColorScheme(.dark)
     }
 }
