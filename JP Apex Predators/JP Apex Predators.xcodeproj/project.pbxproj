@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2474097F2A64E84A001AEDBE /* PredatorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2474097E2A64E84A001AEDBE /* PredatorDetail.swift */; };
 		24A5F4882A64282A00FC72E5 /* JP_Apex_PredatorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5F4872A64282A00FC72E5 /* JP_Apex_PredatorsApp.swift */; };
 		24A5F48A2A64282A00FC72E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5F4892A64282A00FC72E5 /* ContentView.swift */; };
 		24A5F48C2A64282E00FC72E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5F48B2A64282E00FC72E5 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2474097E2A64E84A001AEDBE /* PredatorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorDetail.swift; sourceTree = "<group>"; };
 		24A5F4842A64282A00FC72E5 /* JP Apex Predators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JP Apex Predators.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A5F4872A64282A00FC72E5 /* JP_Apex_PredatorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JP_Apex_PredatorsApp.swift; sourceTree = "<group>"; };
 		24A5F4892A64282A00FC72E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				24A5F4992A642DA500FC72E5 /* Controller.swift */,
 				24A5F4892A64282A00FC72E5 /* ContentView.swift */,
 				24A5F49B2A64347600FC72E5 /* PredatorRow.swift */,
+				2474097E2A64E84A001AEDBE /* PredatorDetail.swift */,
 				24A5F4952A64299C00FC72E5 /* jpapexpredators.json */,
 				24A5F48B2A64282E00FC72E5 /* Assets.xcassets */,
 				24A5F48D2A64282E00FC72E5 /* Preview Content */,
@@ -153,6 +156,7 @@
 				24A5F4982A642BEB00FC72E5 /* ApexPredator.swift in Sources */,
 				24A5F48A2A64282A00FC72E5 /* ContentView.swift in Sources */,
 				24A5F4882A64282A00FC72E5 /* JP_Apex_PredatorsApp.swift in Sources */,
+				2474097F2A64E84A001AEDBE /* PredatorDetail.swift in Sources */,
 				24A5F49A2A642DA500FC72E5 /* Controller.swift in Sources */,
 				24A5F49C2A64347600FC72E5 /* PredatorRow.swift in Sources */,
 			);
