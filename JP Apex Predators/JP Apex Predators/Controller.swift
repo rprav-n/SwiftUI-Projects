@@ -26,4 +26,14 @@ class Controller {
             }
         }
     }
+    
+    func sortByAlphabetical() -> [ApexPredator] {
+        apexPredators.sort { $0.name < $1.name }
+        return apexPredators
+    }
+    
+    func sortByMovieAppearance() -> [ApexPredator] {
+        apexPredators.sort { $0.id < $1.id }
+        return apexPredators
+    }
 }
