@@ -12,16 +12,26 @@ struct PredatorDetail: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .trailing) {
-                Image(predator.type)
-                    .resizable()
-                    .scaledToFit()
-                Image(predator.name.lowercased().replacingOccurrences(of: " ", with: ""))
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: UIScreen.main.bounds.width/1.5, height: UIScreen.main.bounds.height/4)
-                    .shadow(color: .black, radius: 6)
-                    .offset(y: -210)
-                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                ZStack {
+                    Image(predator.type)
+                        .resizable()
+                        .scaledToFit()
+                    NavigationLink {
+                        Image(predator.name.lowercased().replacingOccurrences(of: " ", with: ""))
+                            .resizable()
+                            .scaledToFit()
+                    } label: {
+                        Spacer()
+                        Image(predator.name.lowercased().replacingOccurrences(of: " ", with: ""))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: UIScreen.main.bounds.width/1.5, height: UIScreen.main.bounds.height/4)
+                            .shadow(color: .black, radius: 6)
+                            .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                            .padding(.top)
+                    }
+                }
+                
                 
                 VStack(alignment: .leading) {
                     
@@ -59,7 +69,7 @@ struct PredatorDetail: View {
                     }
                 }
                 //.offset(y: -210)
-                .padding(.top, -230)
+                //.padding(.top, -230)
                 .padding()
             }
         }

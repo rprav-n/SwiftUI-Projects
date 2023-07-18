@@ -20,6 +20,7 @@ struct PredatorRow: View {
                 .frame(width: 100, height: 100)
                 .shadow(color: .white, radius: 1, x: 0, y: 0)
             
+            
             VStack(alignment: .leading) {
                 // Name
                 Text(predator.name)
