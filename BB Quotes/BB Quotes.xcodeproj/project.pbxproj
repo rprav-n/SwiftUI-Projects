@@ -15,6 +15,8 @@
 		2449A2982A6D822C0093F67E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2449A2972A6D822C0093F67E /* Quote.swift */; };
 		2449A29A2A6D82820093F67E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2449A2992A6D82820093F67E /* Character.swift */; };
 		2449A29C2A6D86040093F67E /* FetchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2449A29B2A6D86040093F67E /* FetchController.swift */; };
+		24625C9E2A6F7B05002A6876 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24625C9D2A6F7B05002A6876 /* Constants.swift */; };
+		24625CA02A6F7D7B002A6876 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24625C9F2A6F7D7B002A6876 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		2449A2972A6D822C0093F67E /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		2449A2992A6D82820093F67E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2449A29B2A6D86040093F67E /* FetchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchController.swift; sourceTree = "<group>"; };
+		24625C9D2A6F7B05002A6876 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		24625C9F2A6F7D7B002A6876 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +65,11 @@
 			children = (
 				2449A2872A6D793E0093F67E /* BB_QuotesApp.swift */,
 				2449A2892A6D793E0093F67E /* ContentView.swift */,
+				24625C9F2A6F7D7B002A6876 /* ViewModel.swift */,
 				2449A29B2A6D86040093F67E /* FetchController.swift */,
 				2449A2972A6D822C0093F67E /* Quote.swift */,
 				2449A2992A6D82820093F67E /* Character.swift */,
+				24625C9D2A6F7B05002A6876 /* Constants.swift */,
 				2449A2952A6D79B20093F67E /* samplecharacter.json */,
 				2449A28B2A6D79420093F67E /* Assets.xcassets */,
 				2449A28D2A6D79420093F67E /* Preview Content */,
@@ -155,6 +161,8 @@
 				2449A2882A6D793E0093F67E /* BB_QuotesApp.swift in Sources */,
 				2449A29C2A6D86040093F67E /* FetchController.swift in Sources */,
 				2449A29A2A6D82820093F67E /* Character.swift in Sources */,
+				24625C9E2A6F7B05002A6876 /* Constants.swift in Sources */,
+				24625CA02A6F7D7B002A6876 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
