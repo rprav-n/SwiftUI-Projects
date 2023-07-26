@@ -18,7 +18,18 @@ struct ListView: View {
             }
             
         }
+        .listStyle(.plain)
         .navigationTitle("Todo List 📝")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                EditButton()
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink("Add") {
+                    AddView()
+                }
+            }
+        }
     }
 }
 
